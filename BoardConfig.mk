@@ -52,6 +52,11 @@ BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 
 TARGET_COPY_OUT_PRODUCT := product
 
+# tell update_engine to not change dynamic partition table during updates
+# needed since our qti_dynamic_partitions does not include
+# vendor and odm and we also dont want to AB update them
+TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS := true
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
