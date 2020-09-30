@@ -400,21 +400,6 @@ vendor/bin/thermal-engine
 # Time services
 vendor/bin/time_daemon
 
-# Vibrator firmware
-vendor/firmware/aw8697_haptic_166.bin|5c2b1c5573cab5e1d37d0b0c372344ca5a1140bf
-vendor/firmware/aw8697_haptic_168.bin|5c2b1c5573cab5e1d37d0b0c372344ca5a1140bf
-vendor/firmware/aw8697_haptic_170.bin|5c2b1c5573cab5e1d37d0b0c372344ca5a1140bf
-vendor/firmware/aw8697_haptic_172.bin|5c2b1c5573cab5e1d37d0b0c372344ca5a1140bf
-vendor/firmware/aw8697_haptic_174.bin|5c2b1c5573cab5e1d37d0b0c372344ca5a1140bf
-vendor/firmware/awinic_haptic_gun_params.bin|b691b94d982d136d3f29c6d0783d2da7d73b0302
-vendor/firmware/shuntai24k_rtp.bin|4e15daffbf0a9e22df6c7a2865cafd85699487ed
-vendor/firmware/wentai24k_rtp.bin|8e024d4e3cc17d84bd79a5087c04a1a645e13f7d
-
-# Vibrator HAL
-vendor/bin/hw/vendor.oneplus.hardware.lmvibrator@1.0-service|82e80d290ac46d30eb56c8ff2f677d605cc12a1a
-vendor/etc/init/vendor.oneplus.hardware.lmvibrator@1.0-service.rc|8da80426dff98045811df287846c0931de3884ac
-vendor/lib64/vendor.oneplus.hardware.lmvibrator@1.0.so|fd2a7cdbf64c6237c907acd1f4cfab0586e95a94
-
 # WiFi
 vendor/bin/cnss-daemon
 vendor/lib/libwigig_flashaccess.so
