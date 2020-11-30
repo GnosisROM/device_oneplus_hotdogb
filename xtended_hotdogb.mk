@@ -14,9 +14,6 @@ $(call inherit-product, device/oneplus/hotdogb/device.mk)
 # Inherit some common xtended stuff.
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
-# Inherit GApps
-$(call inherit-product, vendor/google/gms/config.mk)
-
 # Inherit Pixel apn
 $(call inherit-product, vendor/xtended/telephony/telephony.mk)
 
