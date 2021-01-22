@@ -56,5 +56,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # API Level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Safetynet
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/keystore:system/bin/keystore \
+    $(LOCAL_PATH)/rootdir/lib64/libkeystore-attestation-application-id.so:system/lib64/libkeystore-attestation-application-id.so
+
 # Inherit from oneplus sm8150-common
 $(call inherit-product, device/oneplus/sm8150-common/common.mk)

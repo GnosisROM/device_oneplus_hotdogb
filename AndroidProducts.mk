@@ -15,9 +15,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_hotdogb.mk
+    $(LOCAL_DIR)/aosp_hotdogb.mk \
+    $(LOCAL_DIR)/hotdogb.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_hotdogb-user \
     aosp_hotdogb-userdebug \
-    aosp_hotdogb-eng
+    aosp_hotdogb-eng \
+    hotdogb-user \
+    hotdogb-userdebug \
+    hotdogb-eng
