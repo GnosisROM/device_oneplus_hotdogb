@@ -9,6 +9,12 @@ $(call inherit-product, device/oneplus/sm8150-common/common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/hotdogb/hotdogb-vendor.mk)
 
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+    LOCAL_KERNEL := device/oneplus/hotdogb/kernel
+else
+    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL) 
+endif
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
